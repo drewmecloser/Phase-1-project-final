@@ -93,3 +93,12 @@ function filterAndSearchPlants() {
     renderPlants(filteredPlants);
 }
 
+searchInput.addEventListener('input', filterAndSearchPlants);
+
+typeFilter.addEventListener('change', filterAndSearchPlants);
+
+clearFiltersBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    typeFilter.value = '';
+    renderPlants(allPlants);
+});
