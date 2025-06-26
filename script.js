@@ -77,3 +77,19 @@ function populateTypeFilter(plants) {
         typeFilter.append(option);
     });
 }
+
+function filterAndSearchPlants() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedType = typeFilter.value;
+
+    const filteredPlants = allPlants.filter(plant => {
+        const matchesSearch = plant.name.toLowerCase().includes(searchTerm) ||
+                            plant.funFact.toLowerCase().includes(searchTerm);
+
+        const matchesType = selectedType === '' || plant.type === selectedType;
+        return matchesSearch && matchesType;
+    });
+
+    renderPlants(filteredPlants);
+}
+
