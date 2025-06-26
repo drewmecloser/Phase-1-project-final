@@ -66,3 +66,14 @@ function renderPlants(plantsToRender) {
         plantContainer.append(plantCard);
     });
 }
+
+function populateTypeFilter(plants) {
+    const types = new Set(plants.map(plant => plant.type));
+    typeFilter.innerHTML = '<option value="">All Types</option>';
+    types.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        typeFilter.append(option);
+    });
+}
