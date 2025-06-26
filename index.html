@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="app-header">
+        <h1>Welcome to My Amazing Plant Facts Page!</h1>
+        <p>Discover fascinating insights about the plant kingdom.</p>
+    </header>
+
+    <main class="main-content">
+        <section class="controls-section">
+            <input type="text" id="searchInput" placeholder="Search for a plant by name..." class="input-field"> 
+            <select id="typeFilter" class="input-field"> 
+                <option value="">All Types</option>
+                <option value="Flower">Flower</option>
+                <option value="Tree">Tree</option>
+                <option value="Carnivorous Plant">Carnivorous Plant</option>
+                <option value="Succulent">Succulent</option>
+                <option value="Herb">Herb</option>
+            </select>
+            <button id="clearFiltersBtn" class="button">Clear Filters</button>
+        </section>
+
+        <section id="plant-container" class="plant-grid">
+            <p class="loading-message">Loading plant facts...</p>
+        <!-- Plant cards will be dynamically inserted here -->
+        </section>
+        
+    </main>
+
+    <footer class ="app-footer">
+        <p>&copy; 2025 Plant Facts App. All rights reserved.</p>
+    </footer>
+   
+    <script src="script.js"></script>
+    
     
 </body>
 </html>
