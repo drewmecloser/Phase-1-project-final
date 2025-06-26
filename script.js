@@ -102,3 +102,23 @@ clearFiltersBtn.addEventListener('click', () => {
     typeFilter.value = '';
     renderPlants(allPlants);
 });
+
+plantContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('like-button')) {
+        const button = event.target;
+        button.classList.toggle('liked');
+        if (button.classList.contains('liked')) {
+            button.textContent = '❤️ Liked!';
+        } else {
+            button.textContent = '❤️ Like';
+        }
+
+        const plantCard = button.closest('.plant-card');
+        const plantId = plantCard ? plantCard.dataset.plantId : null;
+        if (plantId) {
+            console.log(`Plant ID ${plantId} was ${button.classList.contains('liked') ? 'liked' : 'unliked'}.`);
+        }
+    }
+});
+
+document.addEventListener('DOMContentLoaded', fetchPlants);
