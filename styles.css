@@ -41,6 +41,19 @@ main-content {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+control-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+}
+
 input-field {
     padding: 10px 15px;
     border: 1px solid #ccc;
@@ -124,4 +137,28 @@ plant-card .type, .plant-card .care-level {
     font-weight: bold;
     color: #4CAF50;
     margin-top: 5px;
+}
+
+like-button{
+    background-color: #ff5722;
+    color: white;
+    padding: 8xp 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+like-button:hover {
+    background-color: #e64a19;
+}
+
+liked {
+    background-color: #2196f3;
+}
+
+liked:hover {
+    background-color: #1976d2;
 }
