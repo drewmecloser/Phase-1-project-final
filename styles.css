@@ -106,3 +106,22 @@ plant-card img{
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+plant-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+plant-card .fun-fact {
+    font-style: italic;
+    color: #666;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+plant-card .type, .plant-card .care-level {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 5px;
+}
