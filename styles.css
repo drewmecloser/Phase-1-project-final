@@ -19,3 +19,26 @@ header {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+p{
+    margin: 0;
+    font-size: 1.1em;
+}
+
+main-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
