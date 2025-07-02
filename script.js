@@ -3,7 +3,7 @@ const searchInput = document.getElementById('searchInput');
 const typeFilter = document.getElementById('typeFilter');
 const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
-const API_URL = 'https://final-server-n0rs.onrender.com';
+const API_URL = 'https://final-server-n0rs.onrender.com/plants';
 
 let allPlants = [];
 
